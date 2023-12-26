@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Feedback Form</title>
+</head>
+<body>
+  <h1>Feedback Form</h1>
+  <form id="feedbackForm" action="/submit" method="post">
+    <label for="rating">Rating (1-5): </label>
+    <input type="number" name="rating" id="rating" min="1" max="5" required>
+    <br>
+    <label for="feedback">Feedback: </label>
+    <textarea name="feedback" id="feedback" required></textarea>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="/scripts.js"></script>
+</body>
+</html>
